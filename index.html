@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="thescript.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <div class="divider heading">
+  <h1 class="">50 30 20 Budgeting App</h1>
+<h2>Try our free budgeting calculator!</h2>
+<button onclick="next0()" class="btn-outline-primary btn">Get Started</button>
+</div>
+
+  <div class="monthly-income container-sm divider hidden">
+    <label for="monthlyincome">Enter Total Monthly Income (After Taxes)</label>
+    <input type="number" id="monthlyincome" placeholder="$">
+ <button onclick="next1()" class="btn-outline-primary btn">Next</button>
+  </div>
+  
+  <div class="housing-expenses container-sm divider hidden">
+    <div class="rent">
+    <label for="monthlyrent">Monthly Rent/Mortgage</label>
+    <input type="text" id="monthlyrent" placeholder="$">
+  </div>
+  <div class="utilities">
+    <label for="utilities">Utilities</label>
+    <input type="number" id="utilities" placeholder="$">
+  </div>
+  <div class="internet">
+    <label for="internet">Internet Bill</label>
+    <input type="number" id="internet" placeholder="$">
+  </div>
+  <button onclick="next2()" class="btn-outline-primary btn">Next</button></div>
+  </div>
+  <br>
+  <br>
+  <br>
+<div class="transportation-expenses container-sm divider hidden">
+<div class="carpayment">
+  <label for="carpayment">Car Payment</label>
+  <input type="number" id="carpayment" placeholder="$">
+</div>
+<div class="carinsurance">
+  <label for="carinsurance">Car Insurance</label>
+  <input type="number" id="carinsurance" placeholder="$">
+</div>
+<div class="gas">
+  <label for="gas">Gas</label>
+  <input type="number" id="gas" placeholder="$">
+</div>
+<button onclick="next3()" class="btn-outline-primary btn">Next</button>
+</div>
+<br>
+<br>
+<br>
+<div class="personal-expenses container-sm divider hidden">
+  <div class="groceries">
+    <label for="groceries">Groceries</label>
+    <input type="number" id="groceries" placeholder="$">
+  </div>
+  <div class="cellphone">
+    <label for="cellphone">Cell Phone Bill</label>
+    <input type="number" id="cellphone" placeholder="$">
+  </div>
+  <div class="clothes">
+    <label for="clothes">Clothes</label>
+    <input type="number" id="clothes" placeholder="$">
+  </div>
+  <div class="entertainment">
+    <label for="entertainment">Entertainment</label>
+    <input type="number" id="entertainment" placeholder="$">
+  </div>
+
+<button onclick=calculateTotal() class="btn-outline-success btn"id="myBtn" data-toggle="modal" data-target="#myModal">Calculate</button>
+</div>
+
+<div class="modal fade" id="myModal">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+    
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title"></h4>
+        <button type="button" class="close" data-dismiss="modal">×</button>
+      </div>
+      
+      <!-- Modal body -->
+      <div class="modal-body">
+        <p id="textHere"></p>
+        <p id="textThere"></p>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+  </div>
+</body>
+</html>

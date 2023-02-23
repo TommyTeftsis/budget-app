@@ -1,0 +1,50 @@
+*{
+  margin: 0;
+  padding: 0;
+  
+}
+body{
+  background-color: antiquewhite;
+}
+.divider{
+padding: 300px;
+background-color:;
+justify-content: center;
+}
+
+.button0{
+width:15%;
+height: 20px;
+}
+h1{
+  
+}
+.btn{
+  margin: 10px 0;
+}
+input{
+  width: 40%;
+  display: block;
+  margin-bottom: 20px;
+  font-style: bold;
+
+input::-moz-placeholder {
+  text-align: right;
+}
+}
+.hidden{
+  display: none;
+}
+.modal.fade.show {
+  backdrop-filter: blur(5px);
+}
+.text-green{
+  color: green;
+}
+.text-red{
+  color: red;
+}
+label{
+  font-weight: bold;
+  width: 100%;
+}
